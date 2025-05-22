@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div.stickey{
+            border: 3px solid #4caf50;
+            position: sticky;
+            padding: 8px;
+            top: 0;
+            background-color: #CAE8CA;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h2>this is sticky file</h2>
+    <a href="/week2/positions/index.html" class="navlink">positions</a>
+    <p>try to scroll inside this frame to understsnd how sticky position works</p>
+
+    <div class="stickey">
+        this div is positioned sticky 
+    </div>
+    
+    <div style="padding-bottom: 2000px;">
+        <p>An element with position stickey is positioned based on the user scroll position.A sticky element toggle between relative and fixed depending on the scroll position it is position relative untile a give offset position is met then it stick in place like fiked position <strong>NOTE,</strong> you must specify atleast one of left top right or buttom before the position is met   </p>
+    </div>
+</body>
+</html>
