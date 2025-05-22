@@ -1,0 +1,113 @@
+/* main css styles 
+main css style
+main css styles
+main css styles
+*/
+
+ /* *{
+   background-color: red;
+    
+}
+h1{
+   color: #00ff00;
+}
+p{
+   font-size: 50px;
+   background-color: #000000;
+   color: #f2f2f2;
+}
+#can{
+   text-align: center;
+}
+#tin{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#us{
+   font-size: large;
+}
+#me{
+   font-size: small;
+}
+.dowm{
+  font-size: 70px; 
+}
+.come{
+   text-align: left;
+}
+.go{
+   text-align: right;
+}
+.up{
+   text-align: center;
+} */
+ /* h1.car::before{
+   content: url(/download.avif);
+   width: 40px;
+   height: 40px;
+   display: inline-block;
+   overflow: hidden;
+ }
+ h1.car::after{
+   content: url(/download.avif);
+   width: 40px;
+   height: 40px;
+   display: inline-block;
+   overflow: hidden; */
+
+/* .ohms{
+   height: 3px;
+   width: 1rem;
+}
+.dog{
+   font-size: 15%;
+   background-color: blue;
+   width: 100vw;
+   height: 100vh;
+}
+p{
+   font-size: 1em;
+} */
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ .ohms{
+   width: 100%;
+   height: 3px;
+   display: block;
+   background-color: black;
+   position: relative;
+   /* right: 1rem; */
+   top: 0%;
+   /* left: 50%; */
+ }
+.law{
+   position: absolute;
+   width: 2rem;
+   left: 2rem;
+   bottom: 2rem;
+
+}
+.ohms::before{
+   content: "";
+   width: 2rem;
+   height: 3px;
+   position: relative;
+   display: block;
+   background-color: black;
+   top: -6px;
+}
+.ohms::after{
+   content: "";
+   width: 2rem;
+   height: 3px;
+   position: relative;
+   display: block;
+   background-color: black;
+   top: 3px;
+}
+body{
+   padding: 2rem;
+   background-color: blue;
+}
