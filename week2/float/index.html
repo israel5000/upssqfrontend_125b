@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .padding{
+            padding: 2rem;
+        }
+        .black{
+            background-color: black;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .colorwhite{
+            color: white;
+        }
+        .box-100{
+            width: 100px;
+            height: 100px;
+        }
+        .float-right{
+            float: right;
+        }
+        .purple{
+            background-color: rgb(231, 145, 231);
+        }
+        .float-left{
+            float: left;
+        }
+        .clearboth{
+            clear: both;
+        }
+        .box-400{
+            width: 100px;
+            height: 100vh;
+        }
+        .box-rectangul-100vw{
+            width: 100vw;
+        }
+        .padding1-5{
+            padding: 1.5rem;
+        }
+        .box-rectangul-96{
+            width: 96vw;
+        }
+        .fill-size{
+            width: 185vh;
+            height: 100vh;
+        }
+        .clearriigt{
+            clear: right;
+        }
+        .clearleft{
+            clear: left;
+        }
+        .custom-border{
+            border: 3px solid #73ad21;
+        }
+        .custom-padding{
+            padding: 5px;
+        }
+        .clear-fix{
+            overflow: auto;
+        }
+    </style>
+    <title>CSS float</title>
+</head> 
+<body>
+        <!-- <h2>CSS float property</h2>
+        <p>The float property allow us to position elements either on theleft or on the right side  </p> -->
+    <div class="black padding1-5 colorwhite box-rectangul-100vw float-left">
+        <p>Lorem, ipsum.</p>
+    </div>
+    <div class="blue padding colorwhite box-400 clearleft float-left">
+        <p><a href="./clear.html" class="colorwhite">clear</a></p>
+    </div>
+    <div class="purple colorwhite float-left padding fill-size">
+        <p class="padding-para colorwhite">The CSS float property specifies how an element should <i>FLOAT</i> </p>
+        <p class="padding-para colorwhite">The CSS cler propoerty specifieswhat element can float beside the cleared element on which side</p>
+        <h2 class="colorwhite padding-para">The float property</h2>
+        <p class="colorwhite padding-para">The flot propertyis used for positioning and formatting content exmple let an image float left in the container</p>
+        <p class="colorwhite padding-para">the flot propertycan have one of the following values</p>
+        <ul class="colorwhite padding-para">
+            <li>Left- The element float tothe left of the container</li>
+            <li>right- The element float to the right of the container</li>
+            <li>None- The element does not float</li>
+            <li>Inherit- The element Inherit the first value of its parent</li>
+        </ul>
+        <p>In the simplest term the float property can be usedto wrap text around an image  </p>
+        <div class="custom-border custom-padding">
+            <img src="/assets/pineapple.jpg" alt="pineapple" class="float-right">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, similique?
+        </div> 
+    </div>
+</body> 
+</html>

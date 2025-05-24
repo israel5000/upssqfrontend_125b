@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .border1{
+            border: 2px solid #73ad21;
+        }
+        .border2{
+            border: 1px solid #e2e2e2;
+        }
+        .float-left{
+            float: left;
+        }
+        .float-right{
+            float: right;
+        }
+        .clear-left{
+            clear: left;
+        }
+        .clear-right{
+            clear: right;
+        }
+        .clear-both{
+            clear: both;
+        }
+        .clear-fix{
+            overflow: auto;
+        }
+    </style>
+    <title>CSS layout- clear and clearfixed</title>
+</head>
+<body>
+    <p>when we use the float property and we want the next element to be bellow not to the right ot the left we will have to use the clear property</p>
+    <p>the clear propertyspecifieswhat to happen to the element that is next to the flowting element</p>
+    <p>The clear property can have one of the following value</p>
+    <ul>
+        <li>None- The elementis not pushed bellow left or right floated elements and this is the defult</li>
+        <li>left- The element is pushed bellow left floated elements</li>
+        <li>right- The element is pushed bellow right floated elements</li>
+        <li>both- The element is pushed bellow both left and right floated elements</li>
+        <li>Inherit- The element Inherit the float propertyofit parent</li>
+    </ul>
+    <a href="./index.html">< Back</a>
+    <h3>The clearfix hack</h3>
+    <p>if a floated elementis taller than the it containing elementit will overflow outside it container we can then add a clear fix hack to solve this problem</p>
+    <section class="border2"> 
+        <div class="border1">
+           <img src="/assets/pineapple.jpg" alt="pineapple" class="float-right">
+           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, aliquam!
+        </div>
+        <div class="border1">
+            <img src="/assets/pineapple.jpg" alt="pineapple" class="float-right">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, modi?
+        </div>
+    </section>
+</body>
+</html>
