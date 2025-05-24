@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        span{
+            color: red;
+        }
+        p~div{
+            overflow-x: scroll;
+            overflow-y: hidden;
+            background-color: coral;
+            width: 100px;
+            height: 65px;
+        }
+    </style>
+    <title>css-overflow</title>
+</head>
+<body>
+   <header>
+    <h1>css-overflow</h1>
+    <nav class="nav">
+        <ul class="navlist">
+            <li class="navitem"><a href="" class="navlink">Visible</a></li>
+            <li class="navitem"><a href="" class="navlink">Hidden</a></li>
+            <li class="navitem"><a href="" class="navlink">scroll</a></li>
+            <li class="navitem"><a href="" class="navlink">Auto</a></li>
+        </ul>
+    </nav>
+   </header> 
+   <section class="main-section">
+    <h2>over property discription</h2>
+    <p>The overflow property specify whether to click or to add scroll bar when the content of an element is too big to fit a specify area</p>
+    <p>The overflow property has the following properties which are</p>
+    <ul>
+        <li>Visible</li>
+        <li>Hidden</li>
+        <li>scroll</li>
+        <li>Auto</li>
+    </ul>
+    <p><i><strong>NOTE</strong>,the overflow properties only work for block element with specified height</i></p>
+    <p><i><strong>NOTE</strong>, in OXXLION scroll barsare Hidden by defult even though overflow is set to scrool</i></p>
+   </section>
+   <section>
+    <h2>overflow-X and oveflow-Y</h2>
+    <p>The overflow-X and overflow-Y properties specify whether to change the overflow content just verticaly or horizontaly or both
+    </p>
+    <p> <span>overfflow-x</span> specifies what to do withthe left/right edges of the content</p>
+    <p>
+        <span>oveflow-Y </span> specifies what to do with the top/bottum edges of the content
+    </p>
+    <br><br>
+    <div class="content">
+        <p>You can use the overflow property when you want to have better control over the layout.The overflow propety specifies what happen when the content overflow an element</p> 
+    </div>
+   </section>
+</body>
+</html>

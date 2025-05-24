@@ -3,11 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      #tree_img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+      }
+    </style>
     <title>z-index property</title>
 </head>
 <body>
     <h1>z-index</h1>
     <p>when element are position they can overlap</p>
     <p>The <strong style="color: red;">Z-INDEX</strong> property specify theestackeorder of an element</p>
+    <p>An element can have positive or negative stark order</p>
+    
+    <p>This is an iroko tree</p>
+    <img src="/assets/img_tree_360.png" alt="birld" id="tree_img">
+    <div class="div1">
+        <p>because the image has a z-index of -1 it will be placed behined the text.this shows thst the the higer your z-index the higer your element is in the starkand vice vasal</p>
+    </div>
 </body>
 </html>
