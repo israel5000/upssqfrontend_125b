@@ -9,6 +9,9 @@
             margin: 0;
             box-sizing: border-box;
         }
+        html{
+            overflow: auto;
+        }
         .padding{
             padding: 2rem;
         }
@@ -72,16 +75,16 @@
     </style>
     <title>CSS float</title>
 </head> 
-<body>
+<body class="clear-fix">
         <!-- <h2>CSS float property</h2>
         <p>The float property allow us to position elements either on theleft or on the right side  </p> -->
-    <div class="black padding1-5 colorwhite box-rectangul-100vw float-left">
+    <div class="black padding1-5 colorwhite box-rectangul-100vw float-left clear-fix">
         <p>Lorem, ipsum.</p>
     </div>
-    <div class="blue padding colorwhite box-400 clearleft float-left">
+    <div class="blue padding colorwhite box-400 clearleft float-left clear-fix">
         <p><a href="./clear.html" class="colorwhite">clear</a></p>
     </div>
-    <div class="purple colorwhite float-left padding fill-size">
+    <div class="purple colorwhite float-left padding fill-size clear-fix">
         <p class="padding-para colorwhite">The CSS float property specifies how an element should <i>FLOAT</i> </p>
         <p class="padding-para colorwhite">The CSS cler propoerty specifieswhat element can float beside the cleared element on which side</p>
         <h2 class="colorwhite padding-para">The float property</h2>
@@ -94,7 +97,7 @@
             <li>Inherit- The element Inherit the first value of its parent</li>
         </ul>
         <p>In the simplest term the float property can be usedto wrap text around an image  </p>
-        <div class="custom-border custom-padding">
+        <div class="custom-border custom-padding clear-fix">
             <img src="/assets/pineapple.jpg" alt="pineapple" class="float-right">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, similique?
         </div> 

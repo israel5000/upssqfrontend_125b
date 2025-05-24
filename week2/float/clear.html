@@ -28,6 +28,9 @@
         .clear-fix{
             overflow: auto;
         }
+        .margin{
+            margin: 2rem;
+        }
     </style>
     <title>CSS layout- clear and clearfixed</title>
 </head>
@@ -46,7 +49,7 @@
     <h3>The clearfix hack</h3>
     <p>if a floated elementis taller than the it containing elementit will overflow outside it container we can then add a clear fix hack to solve this problem</p>
     <section class="border2"> 
-        <div class="border1">
+        <div class="border1 clear-fix margin">
            <img src="/assets/pineapple.jpg" alt="pineapple" class="float-right">
            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, aliquam!
         </div>
