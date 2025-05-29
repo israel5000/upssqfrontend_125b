@@ -3,6 +3,31 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #table{
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 75%;
+            margin: 0 120px;
+            }
+            tr:hover td {
+                background-color: darkslategray;
+            }
+            tr td{
+            border: 2px solid black;
+            }
+            tr th{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: left;
+            background-color: aqua;
+            color: gray;
+            }
+            tr:nth-child(even){
+            background-color: darkolivegreen;
+            }
+            
+        </style>
         <title>responsive web design(RWD)</title>
     </head>
     <body>
@@ -13,7 +38,7 @@
             <li class="list-item">
                 <div class="list-item-content">
                     <h4 class="heading-4">fluidgrids:</h4>
-                    <p>Layouts are built using reletive units like percentages allowing elemnts to reside base on the screen</p>
+                    <p>Layouts are built using reletive units like percentages allowing elemnts to reside base on the screen.</p>
                 </div>
             </li>
             <li class="list-item">
@@ -25,7 +50,7 @@
             <li class="list-item">
                 <div class="list-item-content">
                     <h4 class="heading-4">Media quarre:</h4>
-                    <p>css rules tht aply styles base on the device characertics</p>
+                    <p>css rules tht aply styles base on the device characertics.</p>
                     <h5>Example</h5>
                 <pre><code>
                      <!-- Your code goes here -->
@@ -42,11 +67,70 @@
             </li>
             <li class="list-item">
                 <div class="list-item-content">
-                    <h4 class="heading-4">mobile-first approach</h4>
-                    <p>design start with the smallest screen size and scales up ensuring a good user experience on mobile devices first</p>
+                    <h4 class="heading-4">mobile-first approach:</h4>
+                    <p>design start with the smallest screen size and scales up ensuring a good user experience on mobile devices first.</p>
                 </div>
             </li>
+            
         </ol>
-        
+        <h2 class="grid-option">grid option responsive design</h2>
+        <ul class="grid-option-list">
+            <li class="grid-option-item">
+                <h4 class="heading-4">css grid layouts:</h4>
+                <p>Allows for complexlayout with rows and colmuns making it esaseir for creative respond</p>
+            </li>
+            <li class="grid-option-item">
+                <h4 class="heading-4">Flexbox column</h4>
+                <p>provides a one dimentional layout model that is great for out lining items in a row or column making it esaseir to create flexible layouts</p>
+            </li>
+            <li class="grid-option-item">
+                <h4 class="heading-4">Frameworks:</h4>
+                <p>Frameworks like bootstrap,bulma,w3 css, foundationand tailwind css provides prebuilt responsive grid systems that can be easily intigrted into projects</p>
+            </li>
+        </ul>
+        <table id="table">
+            <tr>
+                <th>Screen-size</th>
+                <th>Screen-size code</th>
+                <th>Class prefixs</th>
+                <th>Column count</th>
+            </tr>
+            <tr>
+                <td>(less than 576px)</td>
+                <td>Extral small(xs)</td>
+                <td>None</td>
+                <td>One to twelve</td>
+            </tr>
+            <tr>
+                <td>(>= 576px)</td>
+                <td>Small(SM)</td>
+                <td>.Col-sm-</td>
+                <td>One to twelve</td>
+            </tr>
+            <tr>
+                <td>(>= 768px)</td>
+                <td>Medium(MD)</td>
+                <td>.col-md-</td>
+                <td>One to twelve</td>
+            </tr>
+            <tr>
+                <td>(>= 992px)</td>
+                <td>Large(LG)</td>
+                <td>.col-lg-</td>
+                <td>One to twelve</td>
+            </tr>
+            <tr>
+                <td>(>= 120px)</td>
+                <td>Extra large(EX)</td>
+                <td>.col-xl-</td>
+                <td>one to twelve</td>
+            </tr>
+            <tr>
+                <td>(>=1400px)</td>
+                <td>Extra extra large</td>
+                <td>.col-xxl-</td>
+                <td>one to twelve</td>
+            </tr>
+        </table>
     </body>
 </html>
