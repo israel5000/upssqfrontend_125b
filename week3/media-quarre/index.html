@@ -23,6 +23,9 @@
         background-color: rgb(74, 64, 64)  ;
         color: white;
         }
+        .syntax-exmple{
+            border: 1px solid green;
+        }
     </style>
     <title>Document</title>
 </head>
@@ -66,8 +69,62 @@
        </tbody>
     </table>
     <h2>Common media features</h2>
-    <table>
-     
+    <table class="first-table">
+     <thead>
+        <tr>
+            <th>Features</th>
+            <th>Discription</th>
+        </tr>
+     </thead>
+     <tbody>
+        <tr>
+            <td>Orentation</td>
+            <td>Orentation of the viewport :landscape or portrate</td>
+        </tr>
+        <tr>
+            <td>Max-height</td>
+            <td>maximum height of the viewport</td>
+        </tr>
+        <tr>
+            <td>min-height</td>
+            <td>minimum height of the viewport</td>
+        </tr>
+        <tr>
+            <td>Max-width</td>
+            <td>maximum width of the viewport</td>
+        </tr>
+        <tr>
+            <td>width</td>
+            <td> width of the viewport including the scrool bar</td>
+        </tr>
+        <tr>
+            <td>height</td>
+            <td> height of the viewport including the scrool bar</td>
+        </tr>
+     </tbody>
     </table>
+    <br>
+    <br>
+    <h2>Media quarre syntax</h2>
+    <p>This are set of rules that guide how media qurres are written</p>
+    <div class="syntx-example">
+       <pre>
+        <code>
+         @media not | only media-type and (media-feature) and  (media-feature) {
+            <!-- css rules -->
+         }
+        </code>
+       </pre>
+    </div>
+    <p>The media type is optional (if it is omited,it will be set to all).However</p>
+    <p>The result of the quarre is true if the specified media type matches the type of device the Document is being displayed on all media features in the media are true. When a media is true , the corresponding style sheet or style rule are applied following the nomal cscading rules </p>
+    <div class="media">
+      <p>meaning of the <i>not</i> <i>only</i> <i>and</i> <i>and</i> keyword</p>
+      <ul>
+        <li><strong>NOT</strong> not negate te media quarre mening the media quarre will apply ifthe media quarre is false</li>
+        <li><strong></strong></li>
+        <li><strong></strong></li>
+      </ul>
+    </div>
 </body>
 </html>
