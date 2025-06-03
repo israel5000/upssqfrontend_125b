@@ -32,6 +32,7 @@ a{
     justify-content: space-between;
     padding: 1em;
     align-items: center;
+    min-width: 300px;
 }
 .navbar{
     position: fixed;
@@ -50,9 +51,9 @@ a{
     cursor: pointer;
     background-color:transparent;
     border: none;
-    position: absolute;
+    /* position: absolute;
     right: 1em;
-    right: 1em;
+    right: 1em; */
 }
 .harmbugger{
     display: block;
@@ -66,22 +67,53 @@ a{
    height: 3px;
    border: 1em;
    transition: transform 250ms ease-in-out;
+   right: 1em;
 }
 .harmbugger::before, .harmbugger::after{
     content: "";
+    position: absolute;
     left: 0;
     right: 0;
 }
+
 .harmbugger::before{
-
+    top: 6px;
 }
+
 .harmbugger::after{
-
+    bottom: 6px;
 }
-.nav-item{
-    margin: 1rem;
+.nav-item>a{
+    text-decoration: none;
+    color: aqua;
 }
 nav-list>.nav-item{
     color: blue;
     padding: 1em;
+    margin: 1em;
+}
+/* media quarre */
+@media(min-width:782px){
+    .navbar{
+        transform: translateX(0);
+        background-color: transparent;
+        position: static;
+    }
+    .nav-item{
+        text-align: center;
+    }
+    .nav-item>a{
+        color: black;
+        padding: 10px;
+    }
+    .nav-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .harmbugger, .harmbugger::before, .harmbugger::after{
+        display: none;
+    }
+    
 }
