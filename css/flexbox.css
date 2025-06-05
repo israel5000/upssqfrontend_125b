@@ -22,6 +22,26 @@ a{
     display: flex;
     justify-content: space-between;
 }
+.flex-container-2{
+    background-color: lightblue;
+    display: flex;
+}
+.flex-item-2{
+    padding: 20px;
+    background-color: blue;
+    margin: 15px;
+    width: 80px;
+    height: 80px;
+
+}
+.flex-item-3{
+    padding: 40px;
+    background-color: blue;
+    margin: 15px;
+    width: 80px;
+    height: 100px;
+
+}
 .inner-div{
     display: flex;
 }
