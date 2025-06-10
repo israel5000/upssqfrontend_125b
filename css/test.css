@@ -1,60 +1,14 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-li{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-}
-
-.flex-item{
-    background-color: red;
-    padding: 20px;
-    margin: 15px;
-    width: 80px;
-    height: 80px;
-}
-.flex-container{
-    display: flex;
-    justify-content: space-between;
-}
-.flex-container-2{
-    background-color: lightblue;
-    display: flex;
-}
-.flex-item-2{
-    padding: 20px;
-    background-color: blue;
-    margin: 15px;
-    width: 80px;
-    height: 80px;
-
-}
-.flex-item-3{
-    padding: 40px;
-    background-color: blue;
-    margin: 15px;
-    width: 80px;
-    height: 100px;
-
-}
-.inner-div{
-    display: flex;
-}
-/* STYLES FOR FLEXBOX MQ TEST */
 .header{
     display: flex;
     /* flex-direction: column; */
     justify-content: space-between;
-    padding: 1em;
+    padding: 10px;
     align-items: center;
     min-width: 300px;
+    background-color: blue;
+    height: 40px;
 }
-.navbar{
+.menu{
     position: fixed;
     background-color: black;
     top: 0;
@@ -65,7 +19,10 @@ a{
     transform: translateX(100%);
     z-index: 100; 
 }
-
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
 .toggle{
     padding: 0.5em;
     cursor: pointer;
@@ -103,30 +60,59 @@ a{
 .harmbugger::after{
     bottom: 6px;
 }
-.nav-item>a{
+.navitem>a{
     text-decoration: none;
     color: aqua;
 }
-nav-list>.nav-item{
+.navlist>.navitem{
     color: blue;
-    padding: 1em;
-    margin: 1em;
+    padding: 5px    ;
+    margin: 10px;
+}
+.total{
+    margin: 30px 20px 20px;
+    display: grid;
+    grid-template-areas: "heading heading" "side-bar content";
+    grid-template-columns: 1fr 3fr;
+    gap: 5px;
+    background-color: rgb(73, 67, 67);
+    padding: 5px;
+    color: white;
+    margin: 0;
+}
+.mike{
+    background-color: rgb(48, 45, 45);
+    padding: 10px;
+}
+.mike-1{
+    background-color:blue;
+    padding: 10px;
+}
+.total>header.heading{
+    grid-area: heading;
+    text-align: center;
+}
+.total>div.sidebar{
+    grid-area: side-bar;
+}
+.total>section.content{
+    grid-area: content;
 }
 /* media quarre */
 @media(min-width:782px){
-    .navbar{
+    .menu{
         transform: translateX(0);
         background-color: transparent;
         position: static;
     }
-    .nav-item{
+    .navitem{
         text-align: center;
     }
-    .nav-item>a{
+    .navitem>a{
         color: black;
-        padding: 10px;
+        padding: 5px;
     }
-    .nav-list{
+    .navlist{
         display: flex;
         flex-direction: row;
         justify-content: center;
