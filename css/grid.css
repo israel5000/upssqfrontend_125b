@@ -115,3 +115,23 @@ h2{
         grid-template-columns: 1fr 2fr;
     }
 } */
+ .container-fluid-exmple{
+    background-color: rgb(46, 45, 46);
+ }
+.bg-colour{
+    background-color: black;
+}
+.padding-card{
+    padding: 2em;
+}
+.text-colour{
+    color: white;
+}
+.text-align-center{
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 2fr));
+            gap: 10px;
+            background-color: black;
+        }
+        div.container{
+            background-color: gray;
+        }
+        img.one:hover{
+            transform: matrix(1, 2, 3, 4, 5, 6);
+            transition: transform 750ms ease-in-out;
+        }
+        img.one-1{
+            transform: matrix(1, 2, 3, 4, 5, 6);
+            transition: transform 750ms ease-in-out;
+        }
+         img.two:hover{
+            transform: translate(120px, 50%);
+            transition: transform 750ms ease-in-out;
+         }
+         img.two.2{
+            transform: translate(120px, 50%);
+            transition: transform 750ms ease-in-out;
+         }
+        img.three:hover{
+            transform: scale(2, 0.5);
+            transition: transform 750ms ease-in-out;
+        }
+         img.four:hover{
+            transform: scale(2, 0.5);
+            transition: transform 750ms ease-in-out;
+        }
+         img.five:hover{
+            transform: rotate(45deg);
+            transition: transform 750ms ease-in-out;
+         }
+           img.six:hover{
+            transform: rotate(0.5turn);
+            transition: transform 750ms ease-in-out;
+         }
+          img.seven:hover{
+            transform: skew(30deg, 20deg);
+            transition: transform 750ms ease-in-out;
+          }
+        .example-1{
+            border: 2px solid black;
+            background-color: yellow;
+            margin: 10px;
+            width: 30%;
+            height: 100px;
+            text-align: center;
+            padding-top: 70px;
+        }
+
+    </style>
+    <title>CSS Transforms</title>
+</head>
+<body>
+    <h1>transform </h1>
+    <p>The transform property in CSS lets you rotate ,scale,skew or translate an element.</p>
+    <section>
+        <div class="grid">
+            <div class="container">
+            <img src="/download.png" alt="image" class="one">
+            </div>
+            <div class="container">
+            <img src="/download.png" alt="image">
+            </div>
+            <div class="container">
+            <img src="/download.png" alt="image" class="two">
+            </div>
+            <div class="container">
+            <img src="/download.png" alt="image">
+            </div>
+            <div class="container">
+            <img src="/download.png" alt="image" class="three">
+            </div>
+            <div class="container">
+            <img src="/download.png" alt="image">
+            </div>
+            <div class="container">
+            <img src="/download.png" alt="image" class="four">
+            </div>
+            <div class="container">
+            <img src="/download.png" alt="image">
+            </div>
+            <div class="container">
+            <img src="/download.png" alt="image" class="five">
+            </div>
+            <div class="container">
+            <img src="/download.png" alt="image">
+            </div>
+            <div class="container">
+            <img src="/download.png" alt="image" class="six">
+            </div>
+            <div class="container">
+            <img src="/download.png" alt="image">
+            </div>
+            <div class="container">
+            <img src="/download.png" alt="image" class="seven">
+            </div>
+            <div class="container">
+            <img src="/download.png" alt="image">
+            </div>
+        </div>
+        
+        <h2>CSS 3d Transforms</h2>
+        <p>CSS also support 3d Transformations </p>
+        <p>To use a 3d transform you need to set perspective property on the parent element</p>
+        <h3>CSS 3d transform function</h3>
+        <p>With the css 3d transform property, you can use the following transform function</p>
+        <ul>
+            <li>perspective()</li>
+            <li>rotateX()</li>
+            <li>rotateY()</li>
+            <li>rotateZ()</li>
+            <li>translateX()</li>
+            <li>translateY()</li>
+            <li>translateZ()</li>
+            <li>scaleX()</li>
+            <li>scaleY()</li>
+            <li>scaleZ()</li>
+        </ul>
+    </section>
+    <section class="rotate">
+        <div class="example-1">Lorem, ipsum dolor.</div>
+    </section>
+</body>
+</html>
