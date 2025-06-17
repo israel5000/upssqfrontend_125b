@@ -1,0 +1,71 @@
+:root{
+    /* colours */
+    --clr-primary-400:263 55% 52%;
+    --clr-secondry-400:217 19% 35%;
+    --clr-secondry-500:219 29% 14%;
+    --clr-neutral-400:0 0% 100%;
+    --clr-neutral-200:200 46% 95%;
+    --clr-neutral-300:0 0% 81%;
+
+    /* font family */
+    --ff-primary:"Barlow Semi Condensed,san-serif"
+    
+    /* font weight */
+    --fw-400:500;
+    --fw-700:600;
+
+    /* font size */
+    --fs-300:0.6875rem;
+    --fs-400:0.8124rem;
+    --fs-500:1.25rem;
+
+
+}
+
+    /* box sizing */
+    *,*::after,*::before{
+    box-sizing: border-box;
+    }
+
+    body, h1, h2, h3, h4, p, dl, dd, figure, blockquote {
+     margin: 0;
+    }
+    
+    ol[role="list"],ul[role="list"]{
+        list-style: none;
+    }
+    html:focus-within{
+        scroll-behavior: smooth;
+    }
+    /* set core body defult */
+    body{
+        min-height: 100vh;
+        text-rendering: optimizeSpeed;
+        line-height: 1.5;
+    }
+    /* anchor element that dont have  class gets their default style */
+    a:not([class]){
+        text-decoration-skip-ink: none;
+    }
+    /* make images easeir to work with */
+    img, picture{
+        max-width: 100%;
+        display: block;
+    }
+    /* inherit fonts for input and button */
+    input, button, textarea, select{
+        font: inherit;
+    }
+    /* remove all animation ,transition and smoth scroll for people that prefere not to see them */
+
+    @media (prefers-reduced-motion:reduce;){
+        html:focus-within{
+            scroll-behavior: auto;
+        }
+        *,*::after,*::before{
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+        }
+    }
