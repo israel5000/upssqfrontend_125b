@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        button{
+            background-color: gold;
+            color: black;
+            border: 3px solid black;
+            border-radius: 10px;
+            padding: 10px; 
+            letter-spacing: 1;
+            box-shadow: 1px 1px 3px red;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color:  red;
+            padding: 11px;
+            color: gold;
+            box-shadow: 1px 1px 3px grey;
+        }
+        .note{
+            background-color: rgb(149, 255, 255);
+            border-left: 5px solid aqua;
+            width: 75%;
+            padding: 20px;
+            margin-left: 50px;
+            border-radius: 5px;
+        }
+    </style>
+    <title>Javascript</title>
+</head>
+<body>
+    <header>
+        <h2>What is Javascript</h2>
+    </header>
+    <div>
+        <h3>Learning objectives</h3>
+        <ul class="lisitem">
+            <li class="lisitem">What is Javascript</li>
+            <li class="lisitem">What can you do wit Javascript</li>
+            <li class="lisitem">Adding Javascript to a web page</li>
+        </ul>
+        <h3>A high level definition</h3>
+        <p>Javascript is a scripting or programing language tha allows you to inplement complex features on a web page. Everytime a webpage does more than just sit there mostlikely Javascript is involved . itis a third layer of the three standard technology </p>
+        <ul>
+            <li>
+                <h4>HTML</h4>
+                <P>HTML is the markup language that we use to structure and give meaning to our web structure like defining paragraphs and tables or embegingvideos and images</P>
+            </li>
+            <li>
+                <h4>CSS</h4>
+                <p>CSS is a language of style rule that we can use to add styling to our html content. for example setting background colour</p>
+            </li>
+            <li>
+                <h4>Javascript</h4>
+                <p>Javascript is a scripting language that enables you to create diynamicaly updating cotent control multimedia animate images and pritty much every thing else</p>
+            </li>
+        </ul>
+        <p>The three layer bulilt around one another</p>
+        <button type="button">player 1:Awesome</button>
+    </div>
+    <hr>
+    <br>
+    <div>
+        <h4>Thing Javascript can do</h4>
+        <p>The core client side Javascript language consist of some of the common programing features that allows you to do things like:</p>
+        <ul>
+            <li>You can store useful value inside variables.In the above example ,we aked for a new name to be enterd and store that name in the variable called name </li>
+            <li>Operetion on pieces of text (Known as strings in programing), in the above example we take string "player 1" and join it to the "name" variable to create the complet text model for example player 1:awesome</li>
+            <li>Running code in response to certain event occuring on a webpage. We use a click event in our example above to detect when the lable isclicked then run the code that update the text</li>
+        </ul>
+        <p>certain functionlities are bulilt on the client side Javascript language . This functionlities are called appliction programing interface (APIS). This APIs gives extral superpower to your Javascript code . </p>
+    </div>
+    <div>
+        <h3>What is Javascript doing in your web page</h3>
+        <p>What happen when you run Javascript in your page . when you load your code on a browser (html,css and Javascript) inside an execution anviroment (the browser tab).This is like  a factory tht takes in raw material and output a product (webpage)</p>
+        <p>A very common use ofjavascript ist diynamicaly modify the HTML and CSS to update the userinterface via the dom as mention above</p>
+    </div>
+    <h3>Browser security</h3>
+    <p>Each browser tag have is own seperate bucket for running code (this  bucket are called execution enviroment in technical terms) .This meanes that in most cases the code in each tab is run completly sepretly and the code in one tag cannot directly affect the code in another tab or another website</p>
+    <h3>>Javascript running order</h3>
+    <p>When a browser encounter a block of Javascript it generaly runs it in order from top to buttom this </p>
+    <p>in the first exampe the codeblock iscalled update name (thisthpeofreuseable code block are clled function .this code bvlock ask a user for  new name and inserct that name into the text of the buttton)</p>
+    <p>whenwe storea refrence to a button using document . quarre selector and attch an event listner to it so that when the button is clickedthe update name function is run </p>
+    <p>If we were to swap the button... and button.add event listener ().. the code will not work instead u will get an error returned to the browser developer concept and the error will say "Uncaught Reference Error. Cannot access button before initialization." This means that the button has not been initialized yet so we can not add an event lisitener to it.</p>
+    <br>
+    <div class="note">
+        <strong>Note</strong>: it is not always true tha Javascript runs in order from top to bottom due to behaviours like hoisting but for now bare in mind that items need to be defined before you use them
+    </div>
+    <div>
+        <h3>Interpreted vs compiled code</h3>
+        <p>you might here the terms intepreted and compiled in the consept ofprograming . in interpreted languages the code is run fromtop to buttom and the result of running thecode is imediately returned you dont have to transform the code before the browser runs it the code is recived in it programers frendly text form</p>
+        <br>
+        <p>compile languages on the other hand are transformed (compiled) into another form befor they are run by the computer e.g c/c++ are compiled into machinecode that is then run by the computer the progrm is executed from  binry format which was generated from the original program sourse code</p>
+        <br>
+        <p>Javascript is a light weight interpreted programing language the web browser resive the Javascript code in it original text form and runs the script from that . from technicl stand point, most morden Javascript intepreter actuallyuse a techniqe which is just-in-time compiling to improve perfomance;the Javascript source code get compiledinto afasterbinary formt while the scriptisbeing used so that it can be run as quicly asposible. however Javascript is stillconsiderd an intepreted languge science thecompiltion ishandled t run time insted of ahead of time</p>
+    </div> 
+    <script>
+        function updateName() {
+        const name = prompt("Enter a new name");
+        button.textContent = `Player 1: ${name}`;
+        }
+
+        const button = document.querySelector("button");
+
+        button.addEventListener("click", updateName);
+    </script>
+</body>
+</html>
