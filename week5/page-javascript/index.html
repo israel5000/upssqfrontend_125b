@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <style>
+        .note{
+            background-color: rgb(149, 255, 255);
+            border-left: 5px solid aqua;
+            width: 75%;
+            padding: 20px;
+            margin: 0 50px;
+            border-radius: 5px;
+        }
+    </style>
+    <title>Add javascript to your page</title>
+</head>
+<body>
+    <header>
+        <h2>how toadd javascript to your page</h2>
+    </header>
+    <p>javascript is apllied to your HTML page in a similar way to CSS. Where as CSS uses link element to aply external stylsheet and style element to aply internal style to html javascript only need onefriend in the word of html <span>-</span> the script</p>
+    <br>
+    <div class="note">
+        <p><strong>Note</strong>: you can use screen bar setting up your javascript file to interactive tutorial to learn howto add javascript to html file</p>
+    </div>
+    <br>
+    <h3>Internal javascript</h3>
+    <button>click me</button>
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+    <h3>external javascrip</h3>
+    <p>This work great but wht if we want to putnour Javascript in another file follow the stepbellow</p>
+    <ol>
+        <li>first create a new file in the sme directory and call it index.js file make sure it has a <strong>.js</strong> file extention becuse tis is howit is recognised as a Javascript file</li>
+        <li>Remove your curent script element at the buttom of the body elemnt</li>
+        <li>inside the index.js add the script recived via slack</li>
+        <li> save and refresh your browser</li>
+    </ol>
+    <hr>
+    <br>
+    <h3>Inline Javascript handlers</h3>
+    <p>Sometimes Javascript code can be included insidethe html element this is called Inline Javascript 
+    </p>
+    <button onclick="createParagraph()">click me</button>
+    <p>This demostrate exactly the same functionlity as the previous two section except that the button element incluled an inline onclick handler to </p>
+    <div class="note">
+        <p> <strong>Note:</strong>make sure to Remove the type modulein the scrept tag in your head ortherwise it will not work</p>
+    </div>
+    <br>
+    <div class="note">
+         <p><strong>Note:</strong> In bold letters, pls don't try this, it is bad practice to pollute ur html with javascript and it is inefficient<span>-</span>you will have to includer the <b>onclick="createParagraph()"</b> on every buttton u want the javascript to apply to.</p>
+    </div>
+    <h3>Using addeventlistner</h3>
+    <p>instead of including Javascript to your html</p>
+</body>
+</html>
