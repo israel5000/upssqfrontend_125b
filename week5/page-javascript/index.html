@@ -46,7 +46,7 @@
     <h3>Inline Javascript handlers</h3>
     <p>Sometimes Javascript code can be included insidethe html element this is called Inline Javascript 
     </p>
-    <button onclick="createParagraph()">click me</button>
+    <button>click me</button>
     <p>This demostrate exactly the same functionlity as the previous two section except that the button element incluled an inline onclick handler to </p>
     <div class="note">
         <p> <strong>Note:</strong>make sure to Remove the type modulein the scrept tag in your head ortherwise it will not work</p>
@@ -56,6 +56,21 @@
          <p><strong>Note:</strong> In bold letters, pls don't try this, it is bad practice to pollute ur html with javascript and it is inefficient<span>-</span>you will have to includer the <b>onclick="createParagraph()"</b> on every buttton u want the javascript to apply to.</p>
     </div>
     <h3>Using addeventlistner</h3>
-    <p>instead of including Javascript to your html</p>
+    <p>instead of including Javascript to your html use a pure Javascript construct.The quarreselectorall() function select all the buttons on the page . you can then look through the bottons assigning a hndler for each using add event listner for each</p>
+    <br>
+    <h3>Script loading strategies</h3>
+    <p>All the HTML is loaded in the order in which it apeares if you are using Javascript to manipulate element on the page or more accurately the DOM your code wont work if the Javascript is loaded and parsed before the HTML you are trying to do something to</p>
+    <br>
+    <p>They are a few diffrent strategy to ensure your Javascript only runs after the html is parsed</p>
+    <ul>
+        <li>in the internal Javascript example above the script element is placed at he buttom ofthebody ofthe element and therefore only runs after the rest of the html body is passed </li>
+        <li>In the extanal Javascript above the script element is plased before the html body is parsed but because we are using type module the code is treated s a module and the browser wait for all HTML to be proccesed before executing Javascript module (you can also place external script at the endof themodule but if there is alot of HTML and network is slow it may lot of time before the browser can even start fetching andloading the script so placing external script inthe head is better ).</li>
+        <li>if you still want to use nonmodule scriptin the document head which could cause errors because it executebefore the html is passed
+            <ul>
+                <li>for external script , you should add the difer (or if you do not need the html to be ready ,you can add )</li>
+                <li>for internal script you should wrap the script in a dom content loaded event listner</li>
+            </ul>
+        </li>
+    </ul>
 </body>
 </html>
