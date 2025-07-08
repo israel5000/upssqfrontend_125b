@@ -10,17 +10,17 @@ let guessCount=1
 let resetButton;
 
 function checkGuess(){
-    // console.log("I am a placeholder")
+    console.log("I am a placeholder")
     const userGuess = Number(guessfield.value);
     // conditional if statement
     if(guessCount==1){
         guesses.textContent="previous guesses:"
     }
-    guessCount.textContent`${guessCount.textContent} ${userGuess}`;
+    guesses.textContent=`${guesses.textContent} ${userGuess}`;
     //another if  conditional statement
     if(userGuess===randomNumber){
         lastResult.textContent="Congratulations! you got it right"
-        lastResult.style.backgroundColour="green"
+        lastResult.style.backgroundColor="green"
         lowOrHigh.textContent="";
         setGameOver()
     }else if(guessCount==10){
@@ -28,8 +28,8 @@ function checkGuess(){
     lowOrHigh.textContent="";
     setGameOver()
     }else{
-        lastResult.textContent="run";
-        lastResult.style.backgroundColour="red";
+        lastResult.textContent="wrong";
+        lastResult.style.backgroundColor="red";
         if(userGuess<randomNumber){
         lowOrHigh.textContent="last guess was too low";
      }else if(userGuess>randomNumber){
@@ -39,9 +39,10 @@ function checkGuess(){
     guessCount++
     guessfield.value="";
     guessfield.focus();
-    guesseSubmit.addEventListener("click",checkGuess)
+    
 }
-function setGame(){
+guesseSubmit.addEventListener("click",checkGuess)
+function setGameOver(){
     guessfield.disable=true;
     guesseSubmit.disable=true
     resetButton=document.createElement("button")
