@@ -16,7 +16,7 @@
     color:  white;
     background-color: rgba(0, 0, 0,0.5);
     transform: translateX(300%);
-    transition: transform 650ms ease-in-out;
+    transition: transform 500ms ease-in-out;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -61,7 +61,7 @@ label{
 }
 .hambuger{
     position: relative;
-    transition: transform 250ms ease-in-out;
+    transition: transform 350ms ease-in-out;
 }
 .hambuger::before, .hambuger::after{
     content: "";

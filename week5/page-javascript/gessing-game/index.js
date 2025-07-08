@@ -3,15 +3,15 @@ let randomNumber=Math.floor(Math.random()   *   100)+1
 const guesses=document.querySelector(".guesses")
 const lastResult=document.querySelector(".lastResult")
 const lowOrHigh=document.querySelector(".lowOrHigh")
-const guesseSubmit=document.querySelector("guesseSubmit")
+const guesseSubmit=document.querySelector(".guesseSubmit")
 
-const guessField=document.querySelector(".guessfield")
+const guessfield=document.querySelector("#guessfield")
 let guessCount=1
 let resetButton;
 
 function checkGuess(){
     // console.log("I am a placeholder")
-    const userGuess = Number(gessesfield.value);
+    const userGuess = Number(guessfield.value);
     // conditional if statement
     if(guessCount==1){
         guesses.textContent="previous guesses:"
@@ -38,11 +38,11 @@ function checkGuess(){
     }
     guessCount++
     guessfield.value="";
-    gessesfield.focus();
+    guessfield.focus();
     guesseSubmit.addEventListener("click",checkGuess)
 }
 function setGame(){
-    guessField.disable=true;
+    guessfield.disable=true;
     guesseSubmit.disable=true
     resetButton=document.createElement("button")
     resetButton.textContent="start new game"
@@ -57,11 +57,10 @@ function resetGame(){
         resetPara.textContent=""
     }
     resetButton.parentNode.remove(resetButton);
-    guessField.disable=false;
+    guessfield.disable=false;
     guesseSubmit.disable=false;
-    guessField.value="";
-    guessField.focus()
+    guessfield.value="";
+    guessfield.focus()
     lastResult.style.backgroundColour="white";
     randomNumber=Math.floor(Math.random()*100) + 1
 }
-console.log(guesses)
