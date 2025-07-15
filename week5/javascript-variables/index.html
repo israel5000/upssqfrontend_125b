@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Variables</h1>
+        <p>Vaiables are containers for storing data, javascript variables can be declared in 4 ways:</p>
+        <ol>
+            <li>Automatically</li>
+            <li>Using the var keyword.</li>
+            <li>Using the Let keyword.</li>
+            <li>Using the Const keyword.</li>
+        </ol>
+        <p><strong>note:<strong> it is good practice to declare your variable before using them</p>
+        <p>Using var: var x=y; var x=5; note:strong> the var keyword was used in alll javascript code from 1995 till 2015, the let and const keyword where added to javascript in 2015. The var keyword should only be used for code written for older browsers.</p>
+        <p>Using let: let x=y; let x=5; only use let if you cant use const </p>
+        <p>Using const: const x=y; const x=5; use const if the value should not be changed, use it for an array or object </p>
+        <p>
+            const price1 = 5;
+            const price2 = 8;
+            let total = price1 + price2;
+        </p>
+        <p>
+            where to use var, let or const. To declare a variable means to create the variable with the keyword
+        </p>
+</div>
+<div>
+    <p>
+        All javascript variables must be identified with unique names called identifiers.it can be short names like x and y or more descriptive names likes age, sum, total volume. Thee general rules for constructing variable names are:
+        <ol>
+            <li>it can contain letters, digit, underscore and dollar sign</li>
+            <li>it must begin with a letter.</li>
+            <li>it can also begin with dollar sign and underscore but we will not use it in this tutorial.</li>
+            <li>Names are case sensitive</li>
+            <li>Reserved words like Javascript keywords cannot be used as a variable name.</li>
+        </ol>
+    </p>
+</div>
+<div>
+  <p>The equal sign is an assignment operator, not an equal to, this is different from mathematics algebra. the equal to operator in mathematics is written as == in javscript.
+  </p>
+  <h3>Javascript Data Types</h3>
+  <p>Javscript variables can hold numbers like 100 and text values like "goodluck jonathan". in programming, text values are called text strings, javscript can handle many typess of data but for now lets look at numbers and strings.Numbers are written without quotes. if you put a  number in quotes, it will be treated as a text string.Any variable decleared wit let  are block scope,variablesdecleared with let must be decleared before use ,variable decleared with let cannot be redecleared in the same scope</p>
+  <p>Before 2015 js donot hve block scope itonly have global scope and function scope.in js scope refers tothe assesibility or visibility of variables wher in your code a variable can be used</p>
+  <p>global scope any vriable declered outside of any function or block hasglobal scope . theycan be assecd any wher in your code in the same file or code</p>
+  <p>function scope -variabledecleared within a function are only anailablewithin that function</p>
+  <p>block scope- variable decleared wit let orconst inside a bock areonlyccesablewithin in that block</p>
+  <p>scope chin- when ccesing avaluable js checkweither it is a block or globl scope . they can be accesed by any any where in your code in the file or content </p>
+</div>
+<p id="demo"></p>
+
+    <!-- <script>
+        const pie=3.14
+         let person = "israel";
+         let answer = "me"
+        document.getElementById("#demo").innerHTML=pie+"br"+person+"br"+answer                      
+    </script> -->
+    <script src="./index.js"></script>
+</body>
+</html>

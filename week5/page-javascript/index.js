@@ -9,7 +9,7 @@
 //   button.addEventListener("click", createParagraph);
 // }
 const buttons = document.querySelectorAll("button");
-function createParagraph() {
+const createParagraph = () =>{
   const para = document.createElement("p");
   para.textContent = "You clicked the button!";
   document.body.appendChild(para);
